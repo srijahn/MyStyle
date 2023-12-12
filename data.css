@@ -1,0 +1,284 @@
+body {
+  margin: 0;
+  padding: 0;
+  }
+
+.common {
+  background-image: url('images/28.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  font-size: medium;
+  padding: 30px 100px;
+  align-content: center;
+  display: flex;
+  z-index: 100;
+  justify-content: space-between;
+  align-items: center;
+  background-color:transparent;
+}
+
+.logo {
+  font-weight: 800;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  color: whitesmoke;
+  font-size: 30px;
+}
+
+.navbar a {
+  font-size: large;
+  margin-left: 20px;
+  margin-right: 10px;
+  color:whitesmoke;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background:#e4e4e4;
+  border-radius: 5px;
+  transform: translateY(10px);
+  transition: .5s;
+  opacity: 0;
+  }
+
+  .navbar a:hover::after{
+    transform: translateY(0);
+    opacity: 1;
+    transition-duration: 0.5s;
+  }  
+
+  .navbar a:hover{
+    color: pink;
+  } 
+
+  .get{
+    width: 150px;
+    height: 62px;
+    margin-right: 2%;
+    display: flex;
+    align-items: center;
+  }
+
+   .get input::placeholder {
+    color: black;
+    }
+
+    .get button i {
+    font-size: 22px;
+    
+    }
+
+    .hello {
+      background-image: url(images/beach.jpg);
+      color: white;
+      width: 40%;
+      height: 60vh;
+      position: fixed;
+      left: 110px;
+      margin-bottom: 40px;
+      margin-top: 100px;
+      top: 70px;
+      display: flex;
+      flex-direction: column; /* Align items in a column */
+      justify-content: flex-start; /* Align items to the top */
+      align-items: center;
+      border-radius: 20px;
+      box-shadow: 5px 5px 5px pink;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: blue;
+     display: flex;
+     justify-content: center; 
+      align-items: center;
+    }
+    
+    .content p {
+      font-size: 16px;
+      line-height: 1.5;
+      color: blueviolet;
+    }
+    
+    form input[type="text"] {
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 12px;
+    }
+
+    .content h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      justify-content: center; /* Center content vertically */
+      align-items: center; /* Center content horizontally */
+      display: flex; /* Display the image and text in the same line */
+      align-items: center; /* Vertically align them */
+      color: forestgreen;
+    }
+    
+    .content h2 img {
+      margin-right: 10px; /* Add space between the image and text */
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+    
+    .social-icons a {
+      color: #333; /* Set the color of the icons */
+      font-size: 24px; /* Adjust the size of the icons */
+      text-decoration: none;
+    }
+    
+    .social-icons a:hover {
+      color: #007BFF; /* Set the color on hover */
+    }
+
+    .grid-2-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 50px;
+      background-color: transparent;
+      border: 5px solid green;
+      padding: 10px;
+      padding-bottom: 30px;
+      padding-top: 30px;
+      margin: 30px;
+    
+      color: blue;
+    }
+
+    .grid-2-cols img {
+      max-width: 60%; /* Set the maximum width of the image */
+      max-height: 30vh; /* Set the maximum height of the image */
+      height: auto; /* Maintain aspect ratio */
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: darkorchid;
+    }
+    
+    .login {
+      position: fixed;
+      top: 65%;
+      left: 56%;
+      transform: translate(15%, -75%);
+      background-image: url(images/sea.jpg);
+      padding: 20px;
+      border-radius: 40px;
+      height: 54%;
+      width: 30%;
+      color: darkblue;
+      line-height: 30px;
+      box-shadow: 5px 5px 5px #007BFF;
+      backdrop-filter: blur(8px); /* Adjust the blur strength as needed */
+    }
+    
+    /* Add the following rule to avoid content inside the login box from being blurred */
+    .login::before {
+      content: '';
+      position: absolute;
+      border-radius: 40px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0); /* Adjust the alpha value for the desired opacity */
+      z-index: -1;
+      backdrop-filter: blur(8px); /* Adjust the blur strength to match the background */
+    }
+    
+  
+    .testimonial.boxes {
+      display: flex;
+      flex-direction: row; /* Set the flex direction to row */
+      align-items: center; /* Center items vertically */
+    }
+    
+    .testimonial-text {
+      margin-left: 10px; /* Adjust spacing between the icon and text as needed */
+    }
+
+    .input {
+      display: flex;
+      align-items: center; /* Center items vertically */
+      height: 62px;
+      margin-right: 2%;
+      padding: 5px;
+      font-size: 16px;
+      border-radius: 12px;
+    }
+    
+    .input img {
+      margin-right: 10px; /* Adjust the spacing between the icon and input field */
+    }
+
+    .login h2{
+      margin-bottom: 20px;
+      text-align: center;
+      font-family: cursive;
+      font-weight: 20000px;
+      font-size: 30px;
+      color:midnightblue;
+    }
+
+    .btn {
+      font-weight: bold; /* Add this line to make the text bolder */
+      /* other existing styles */
+      width:100%;
+      height: 40px;
+      background-color: red;
+      margin-top: 20px;
+      box-shadow: 0 0 10px darkblue;
+
+    }
+
+    .rem-for a {
+      margin-left: 60px;
+    }
+
+    .register-link{
+      margin-left:20px;
+    }
+
+    .input label{
+      margin-left: 15px;
+      color: black;
+      font-size: larger;
+      font-weight:500;
+    }
+
+    .login-register{
+      margin-top: 20px;
+      margin-bottom: 15px;
+    }
+
+    .input input{
+      height: 30px;
+      font-size: 15px;
+    }
+
